@@ -1,5 +1,5 @@
-create database cadastros1;
-use cadastros1;
+create database cadastro1;
+use cadastro1;
 
 create table if not exists cliente1(
 CPF varchar(11) not null primary key,
