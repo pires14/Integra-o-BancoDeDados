@@ -35,6 +35,19 @@
                 <th> Ações</th>
             </tr>
         </thead>
+        <tbody>
+            <tr>
+            <!--Jinja para o Python alterar o html-->
+            {% for cliente in clientes %} 
+                <td>{{cliente.CPF}}</td>
+                <td>{{cliente.PRIMEIRO_NOME}}</td>
+                <td>{{cliente.SOBRENOME}}</td>
+                <td>{{cliente.IDADE}}</td>
+            {% endfor %}
+            <!--Cliente: aquele inserido-->
+            <!--Clientes : tabela de clintes-->
+            </tr>
+        </tbody>
     </table>
 </body>
 </html>
